@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mari CS (Pilihan)</title>
+	<link rel="stylesheet" type="text/css" href="style-pilihan.css">
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+<body>
+	<div style="margin-bottom: 50px;"></div>
+	<div class="container">
+		<div class="title-box">
+			<h1>MariCS</h1>
+			<p>Silahkan isi form di bawah ini untuk melakukan pemesanan</p>
+		</div>
+
+		<form action="http://localhost:8888/order" name="formPesanan" id="formPesanan" method="POST">
+			<div class="name-box">
+				<label>Nama Pemesan</label>
+					<input type="text" name="nama" placeholder="Masukkan nama pemesan" required>
+			</div>
+			<div class="choice-box">
+
+				<div class="service-box-1">
+					<img src="images/foto kelas.jpg" style="width:70%">
+					<div style="margin-top: 10px;"></div>		
+					<label><input type="radio" name="pesanan1" value="Pilihan A">20x40 Panorama</label>
+
+					<label><input type="radio" name="pesanan1" value="Pilihan B">10 inch</label>
+
+					<label><input type="radio" name="pesanan1" value="Pilihan C">15 inch</label>
+				</div>
+
+				<div class="service-box-2">
+					<img src="images/pas foto.jpg" style="width:70%">
+					<div style="margin-top: 10px;"></div>	
+					<label><input type="radio" name="pesanan2" value="Pilihan A">4 Lembar 4x6</label>
+					
+					<label><input type="radio" name="pesanan2" value="Pilihan B">8 Lembar 3x4</label>
+					
+					<label><input type="radio" name="pesanan2" value="Pilihan C">8 Lembar 2x3</label>
+
+					<label><input type="radio" name="pesanan2" value="Pilihan D">Combo 1</label>
+					
+					<label><input type="radio" name="pesanan2" value="Pilihan E">Combo 2</label>
+					
+					<label><input type="radio" name="pesanan2" value="Pilihan F">Combo 3</label>
+
+					<label><input type="radio" name="pesanan2" value="Pilihan G">Combo 4</label>
+					
+				</div>
+				<div class="service-box-3">
+					<img src="images/close up.jpg" style="width:70%">
+					<div style="margin-top: 10px;"></div>	
+					<label><input type="radio" name="pesanan3" value="Pilihan A">Paket Close Up</label>
+					<center><a onclick="showConfirmation()">Submit</a></center>
+					<div id="confirmation" hidden>
+						<strong>APAKAH ANDA SUDAH YAKIN?</strong>
+							<button onclick="close()">Cancel</button>>
+							<button onclick="confirmSubmit()">Submit</button>
+						</div>
+				</div>
+			</div>
+		</form>
+
+		<div style="margin-top: 200px;"></div>
+	</div>
+</body>
+<script>
+	function showConfirmation(){
+		document.getElementById('confirmation').hidden = false;
+	}
+	function close(){
+		document.getElementById('confirmation').hidden = true;
+	}
+	function confirmSubmit(){
+		document.getElementById('formPesanan').submit();
+	}
+</script>
+</html>

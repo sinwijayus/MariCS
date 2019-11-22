@@ -1,0 +1,106 @@
+body{
+	background-image: url(images/mariproresizetp.png);
+	line-height: 1.6em;
+	font-family: Arial;
+
+}
+
+
+a:active{
+	background-color: #CD6155;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.title-box{
+	background-color: #ffe6e6;
+	text-align: center;
+	border: 3px #fc9f9f solid;
+	padding-top: 20px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+.name-box{
+	background-color: #ffe6e6;
+	margin-top: 5px;
+	border: 3px #fc9f9f solid;
+	padding: 20px 5px;
+	margin-bottom: 10px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	text-align: center;		
+}
+
+.name-box label{
+	display: block;
+}
+
+.name-box input[type="text"]{
+	text-align: center;
+	width: 99%;
+}
+
+.choice-box label{
+	margin-bottom: 5px;
+}
+
+.choice-box p{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 5px;
+}
+
+.choice-box label{
+	display: block;
+}
+
+.choice-box input[type="number"]{
+	width: 99%;
+	text-align: center;
+}
+
+.service-box-1{
+	background-color: #ffe6e6;
+	text-align: center;
+	margin-top: 5px;
+	border: 3px #fc9f9f solid;
+	padding: 20px 5px;
+	margin-bottom: 10px;	
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-box-2{
+	text-align: center;
+	background-color: #ffe6e6;
+	margin-top: 5px;
+	border: 3px #fc9f9f solid;
+	padding: 20px 5px;
+	margin-bottom: 10px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
+}
+
+.service-box-3{
+	text-align: center;
+	background-color: #ffe6e6;
+	margin-top: 5px;
+	border: 3px #fc9f9f solid;
+	padding: 20px 5px;
+	margin-bottom: 10px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	text-align: center;
+}
+
+a{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	text-decoration: none;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+  	width: 5%;
+}
+
